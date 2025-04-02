@@ -25,15 +25,18 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
+  height: 100%;
 }
 
 body {
   font-weight: 400;
   overflow-x: hidden;
+  overflow-y: auto;
   position: relative;
   background-color: #121212 !important;
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -359,6 +362,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-left: 25px;
 }
 .banner img {
+  width: 100%;
+  height: auto;
   animation: updown 3s linear infinite;
 }
 @keyframes updown {
