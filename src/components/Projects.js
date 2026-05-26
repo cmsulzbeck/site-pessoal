@@ -1,4 +1,4 @@
-import { Col, Container, Row, Tab, Nav } from "react-bootstrap"
+import { Col, Container, Row, Tab } from "react-bootstrap"
 import ProjectCard from "./ProjectCard"
 import colorSharp2 from "../assets/img/color-sharp2.png"
 import projImg1 from "../assets/img/project-img1.jpeg"
@@ -34,6 +34,7 @@ const Projects = () => {
                         <h2>Projects</h2>
                         <p>Here are some of the projects I've worked on.</p>
                         <Tab.Container id="projects-tabs" defaultActiveKey="first">
+                            {/* Tabs hidden until more projects are added. Re-add `Nav` to the import above when uncommenting.
                             <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center">
                                 <Nav.Item>
                                     <Nav.Link eventKey="first">Tab 1</Nav.Link>
@@ -45,6 +46,7 @@ const Projects = () => {
                                     <Nav.Link eventKey="third">Tab 3</Nav.Link>
                                 </Nav.Item>
                             </Nav>
+                            */}
                             <Tab.Content>
                                 <Tab.Pane eventKey="first">
                                     <Row>
@@ -58,8 +60,10 @@ const Projects = () => {
                                         })}
                                     </Row>
                                 </Tab.Pane>
+                                {/*
                                 <Tab.Pane eventKey="second">Segundo</Tab.Pane>
                                 <Tab.Pane eventKey="third">Terceiro</Tab.Pane>
+                                */}
                             </Tab.Content>
                         </Tab.Container>
                     </Col>

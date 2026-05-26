@@ -4,7 +4,7 @@ import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
 
-export const NavBar = () => {
+export const NavBar = ({ onConnectClick }) => {
     const [activeLink, setActiveLink] = useState('home');
 
     const onUpdateActiveLink = (value) => {
@@ -42,11 +42,11 @@ export const NavBar = () => {
                 </div>
                 <div className="nav-right">
                     <div className="social-icon">
-                        <a href="#"><img src={navIcon1} alt="LinkedIn" /></a>
-                        <a href="#"><img src={navIcon2} alt="Facebook" /></a>
-                        <a href="#"><img src={navIcon3} alt="Instagram" /></a>
+                        <a href="https://www.linkedin.com/in/carlo-maschi-sulzbeck" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn" /></a>
+                        <a href="https://web.facebook.com/carlo.maschisulzbeck" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Facebook" /></a>
+                        <a href="https://www.instagram.com/cmsulzbeck/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Instagram" /></a>
                     </div>
-                    <button className="connect-button">Let's Connect</button>
+                    <button className="connect-button" onClick={onConnectClick}>Let's Connect</button>
                 </div>
             </Container>
         </Navbar>

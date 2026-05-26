@@ -705,3 +705,193 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+
+/************ Connect Modal Css ************/
+.connect-modal .modal-content {
+  background-color: #1a1a1a;
+  color: #fff;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
+.connect-modal .modal-header {
+  border-bottom: none;
+  padding: 28px 32px 8px 32px;
+}
+.connect-modal .modal-title {
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: 0.5px;
+}
+.connect-modal .modal-body {
+  padding: 16px 32px 32px 32px;
+}
+.connect-modal .modal-body form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.connect-modal .form-control {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  color: #fff;
+  padding: 14px 22px;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+  transition: 0.3s ease-in-out;
+}
+.connect-modal textarea.form-control {
+  border-radius: 24px;
+  resize: vertical;
+  min-height: 130px;
+}
+.connect-modal .form-control:focus {
+  background: rgba(255, 255, 255, 1);
+  color: #121212;
+  border-color: #AA367C;
+  box-shadow: 0 0 0 3px rgba(170, 54, 124, 0.25);
+}
+.connect-modal .form-control::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+}
+.connect-modal .form-control:focus::placeholder {
+  color: #121212;
+  opacity: 0.55;
+}
+.connect-modal-submit {
+  width: 100%;
+  margin-top: 8px;
+  padding: 14px 0;
+  font-weight: 700;
+  font-size: 17px;
+  letter-spacing: 0.8px;
+  color: #fff;
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  border: none;
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+.connect-modal-submit:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+.connect-modal .btn-close {
+  filter: invert(1) grayscale(100%) brightness(200%);
+  opacity: 0.7;
+}
+.connect-modal .btn-close:hover {
+  opacity: 1;
+}
+
+/* Phone field with country selector */
+.connect-modal .phone-input-group {
+  display: flex;
+  align-items: stretch;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50px;
+  transition: 0.3s ease-in-out;
+}
+.connect-modal .phone-input-group:focus-within {
+  background: rgba(255, 255, 255, 1);
+  border-color: #AA367C;
+  box-shadow: 0 0 0 3px rgba(170, 54, 124, 0.25);
+}
+.connect-modal .phone-input-group .form-control {
+  background: transparent;
+  border: none;
+  border-radius: 0 50px 50px 0;
+  padding-left: 10px;
+  box-shadow: none;
+}
+.connect-modal .phone-input-group:focus-within .form-control {
+  color: #121212;
+}
+.connect-modal .phone-input-group:focus-within .form-control::placeholder {
+  color: #121212;
+  opacity: 0.55;
+}
+.connect-modal .country-toggle.btn,
+.connect-modal .country-toggle.btn:focus,
+.connect-modal .country-toggle.btn:active {
+  background: transparent;
+  border: none;
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50px 0 0 50px;
+  color: #fff;
+  padding: 14px 18px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  text-decoration: none;
+  box-shadow: none;
+}
+.connect-modal .country-toggle.btn:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.05);
+}
+.connect-modal .phone-input-group:focus-within .country-toggle.btn {
+  color: #121212;
+  border-right-color: rgba(0, 0, 0, 0.15);
+}
+.connect-modal .phone-input-group:focus-within .country-toggle.btn:hover {
+  background: rgba(0, 0, 0, 0.04);
+}
+.connect-modal .country-toggle.btn::after {
+  margin-left: 2px;
+  opacity: 0.7;
+}
+.connect-modal .country-flag {
+  font-size: 18px;
+  line-height: 1;
+}
+.connect-modal .country-menu {
+  background-color: #1a1a1a;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 6px;
+  max-height: 280px;
+  overflow-y: auto;
+  min-width: 260px;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.6);
+}
+.connect-modal .country-menu .dropdown-item {
+  color: #fff;
+  border-radius: 12px;
+  padding: 8px 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  transition: 0.2s ease-in-out;
+}
+.connect-modal .country-menu .dropdown-item:hover,
+.connect-modal .country-menu .dropdown-item:focus,
+.connect-modal .country-menu .dropdown-item.active,
+.connect-modal .country-menu .dropdown-item:active {
+  background: linear-gradient(90.21deg, #AA367C -5.91%, #4A2FBD 111.58%);
+  color: #fff;
+}
+.connect-modal .country-menu .country-name {
+  flex: 1;
+}
+.connect-modal .country-menu .country-dial {
+  opacity: 0.85;
+  font-weight: 500;
+}
+.connect-modal .country-menu::-webkit-scrollbar {
+  width: 8px;
+}
+.connect-modal .country-menu::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+}
+.connect-modal .country-menu::-webkit-scrollbar-track {
+  background: transparent;
+}
