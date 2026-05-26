@@ -3,6 +3,7 @@ import { Navbar, Container } from "react-bootstrap";
 import navIcon1 from '../assets/img/nav-icon1.svg';
 import navIcon2 from '../assets/img/nav-icon2.svg';
 import navIcon3 from '../assets/img/nav-icon3.svg';
+import navIcon4 from '../assets/img/nav-icon4.svg';
 
 export const NavBar = ({ onConnectClick }) => {
     const [activeLink, setActiveLink] = useState('home');
@@ -42,6 +43,7 @@ export const NavBar = ({ onConnectClick }) => {
                 </div>
                 <div className="nav-right">
                     <div className="social-icon">
+                        <a href="https://github.com/cmsulzbeck" target="_blank" rel="noopener noreferrer"><img src={navIcon4} alt="GitHub" /></a>
                         <a href="https://www.linkedin.com/in/carlo-maschi-sulzbeck" target="_blank" rel="noopener noreferrer"><img src={navIcon1} alt="LinkedIn" /></a>
                         <a href="https://web.facebook.com/carlo.maschisulzbeck" target="_blank" rel="noopener noreferrer"><img src={navIcon2} alt="Facebook" /></a>
                         <a href="https://www.instagram.com/cmsulzbeck/" target="_blank" rel="noopener noreferrer"><img src={navIcon3} alt="Instagram" /></a>
