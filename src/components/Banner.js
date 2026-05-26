@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import headerImg from '../assets/img/header-img.svg';
 
-export const Banner = () => {
+export const Banner = ({ onConnectClick }) => {
 
     const [loopNum, setLoopNum] = useState(0);
     const [isDeleting, setIsDeleting] = useState(false);
@@ -20,6 +20,7 @@ export const Banner = () => {
         return () => {
             clearInterval(ticker);
         };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [text])
 
     const tick = () => {
@@ -57,7 +58,7 @@ export const Banner = () => {
                         <p>
                             Passionate tech professional actively seeking new opportunities to architect scalable solutions and drive innovation. With expertise spanning backend systems, cloud infrastructure, and mobile development, I bring a comprehensive approach to solving complex technical challenges.
                         </p>
-                        <button onClick={() => console.log('connect')}>Let's connect <ArrowRightCircle size={25} /></button>
+                        <button onClick={onConnectClick}>Let's connect <ArrowRightCircle size={25} /></button>
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={headerImg} alt="Header Img" />
